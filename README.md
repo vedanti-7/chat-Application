@@ -1,6 +1,6 @@
 # Flutter Chat App
 
-A real-time chat application built using **Flutter** and powered by multiple Firebase services including Authentication, Firestore, Storage, and Cloud Messaging. This app supports secure email/password authentication, real-time messaging between users, profile image upload, and both push + local notifications. State management is handled using **Riverpod**, ensuring clean code and smooth performance.
+A real-time chat application built using **Flutter** and powered by multiple Firebase services including Authentication, Firestore, Storage, and Cloud Messaging. This app supports secure email/password authentication, real-time messaging between users, profile image upload, and local notifications. State management is handled using **Riverpod**, ensuring clean code and smooth performance.
 
 ---
 
