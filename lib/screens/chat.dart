@@ -1,0 +1,40 @@
+import 'package:chat_app/widgets/chat_messages.dart';
+import 'package:chat_app/widgets/new_messages.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+class ChatScreen extends StatelessWidget{
+  const ChatScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('FlutterChat'),
+        actions: [
+          IconButton(
+            onPressed: (){
+              FirebaseAuth.instance.signOut();
+            }, 
+            icon: Icon(
+              Icons.exit_to_app,
+              color: const Color.fromARGB(255, 128, 194, 187),
+            ),
+          ),
+        ],
+      ),
+      body: Column(
+        children: const [
+          Expanded(       //will help chat messages take as much space as they can get and so it pushes it down 
+            child: ChatMessages(
+            
+            ),
+          ),
+          NewMessage(
+
+          ),
+        ],
+      )
+    );
+  }
+}
